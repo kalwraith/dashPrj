@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+<nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#sidebar">
+        <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sidebar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 sidebar fixed-top">
+                    <a href="#" class="navbar-brand text-white text-center d-block mx-auto py-3 mb-4">hyunjinkim</a>
+                    <ul class="navbar-nav flex-column mt-4">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white p-2 mb-1 sidebar-link">
+                                <i class="fa fa-duotone fa-id-card"></i> Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/project" class="nav-link text-white p-2 mb-1 sidebar-link">
+                                <i class="fa fa-light fa-diagram-project text-write fa-lg mr-3"></i> Project
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10">
+                    {% block right_menu %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+{% endblock %}

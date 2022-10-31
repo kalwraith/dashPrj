@@ -1,0 +1,9 @@
+.sidebar {
+    height: 100vh;
+    background: linear-gradient(rgba(50,0,0,0.5), rgba(50,50,0,0.9));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 7px 10px;
+    font-size: large;
+}
